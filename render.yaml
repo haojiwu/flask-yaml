@@ -1,0 +1,7 @@
+previewsEnabled: true
+services:
+- type: web
+  name: flask-yaml-test
+  env: python
+  buildCommand: pip install -r requirements.txt
+  startCommand: gunicorn app:app
